@@ -14,90 +14,109 @@
       background-repeat: no-repeat;
       height: 100vh;
       color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
     .content {
       padding: 2em;
       max-width: 800px;
       margin: auto;
-      margin-top: 10vh;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+
+    h2, h3 {
+      margin-top: 1em;
+    }
+
+    small {
+      font-size: 0.8em;
+    }
+
+    ul {
+      margin-top: 0.5em;
+      padding-left: 1.2em;
     }
   </style>
 </head>
 <body>
-<body>
 
-  <h2>Experience</h2>
+  <div class="content">
+    <h2>Experience</h2>
 
-  <div class="position">
-    <h3>Trainee - AI/ML <small>(June 2024 – Present)</small></h3>
-    <div class="company">CompanyName</div>
-    <ul>
-      <li>Built a customer support AI agent which takes audio query from human and responds using its voice with low latency.</li>
-      <li>Worked on voice cloning & speech generation tasks to convert text data into audio using local & proprietary LLMs.</li>
-      <li>Created a multi-agent workflow to automate email replies based on the provided insurance claims information.</li>
-    </ul>
+    <div class="position">
+      <h3>Trainee - AI/ML <small>(June 2024 – Present)</small></h3>
+      <div class="company">CompanyName</div>
+      <ul>
+        <li>Built a customer support AI agent which takes audio query from human and responds using its voice with low latency.</li>
+        <li>Worked on voice cloning & speech generation tasks to convert text data into audio using local & proprietary LLMs.</li>
+        <li>Created a multi-agent workflow to automate email replies based on the provided insurance claims information.</li>
+      </ul>
+    </div>
+
+    <div class="position">
+      <h3>Deep Learning Intern <small>(Jul 2023 – Oct 2023)</small></h3>
+      <div class="company">CompanyName</div>
+      <ul>
+        <li>Performed YouTube Video Classification using Title, Description, and Subtitles of 36 different video genres.</li>
+        <li>Utilized LSTM model and fine-tuned BERT model, achieving F1-scores of 0.7824 and 0.9382 respectively.</li>
+        <li>Attempted Neural Architecture Search and ONNX optimization methods to improve the model’s accuracy.</li>
+      </ul>
+    </div>
+
+    <div class="position">
+      <h3>Machine Learning Project Intern <small>(Jan 2023 – May 2023)</small></h3>
+      <div class="company">CompanyName</div>
+      <ul>
+        <li>Developed a Pix2Pix model for recoloring images to help with diagnosing patients with color vision deficiency.</li>
+        <li>The GAN-generated images had an error rate of less than 0.05 (MSE) compared to the actual simulated images.</li>
+        <li>Configured the model to perform recoloring on videos as well. We learned/used Agile methodology in this project.</li>
+      </ul>
+    </div>
+
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Visual Question Answering <small>(Dec 2023 - Mar 2024)</small></h3>
+      <ul>
+        <li>Built a Deep Generative model which is used to answer the input questions based on the given input image.</li>
+        <li>Fine-tuned a Multimodal Transformer Architecture (BERT, ViT) using QLoRA on the DAQUAR dataset.</li>
+        <li>Reduced the model’s space complexity by 73.6% with minor accuracy and inference time trade-offs.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Lane Line Detection <small>(Oct 2023 - Nov 2023)</small></h3>
+      <ul>
+        <li>Developed a model using U-Net architecture which performs Semantic segmentation to detect lane lines.</li>
+        <li>Utilized a portion of the CULane dataset with 9 categories of lane images for training the model.</li>
+        <li>Used 18000+ lane line images and their respective masks to achieve a testing accuracy of 84.4%</li>
+      </ul>
+    </div>
+
+    <h2>Volunteering</h2>
+
+    <div class="volunteering">
+      <h3>Quantum Self-Driving Neural Networks <small>(Jun 2023 – Aug 2023)</small></h3>
+      <div class="company">CompanyName</div>
+      <ul>
+        <li>Collaborated with a team of 20 to build Deep Learning models predicting steering angles for self-driving cars.</li>
+        <li>Attempted integration with Variational Quantum Algorithms (4 qubits) to enhance performance.</li>
+      </ul>
+    </div>
+
+    <h2>Education</h2>
+
+    <div class="education">
+      <h3>Bachelor’s Degree - Information Technology <small>(Dec 2020 – May 2024)</small></h3>
+      <div class="institution">CollegeName</div>
+      <p>CGPA: 8.52</p>
+    </div>
   </div>
 
-  <div class="position">
-    <h3>Deep Learning Intern <small>(Jul 2023 – Oct 2023)</small></h3>
-    <div class="company">CompanyName</div>
-    <ul>
-      <li>Performed YouTube Video Classification using Title, Description, and Subtitles of 36 different video genres.</li>
-      <li>Utilized LSTM model and fine-tuned BERT model, achieving F1-scores of 0.7824 and 0.9382 respectively.</li>
-      <li>Attempted Neural Architecture Search and ONNX optimization methods to improve the model’s accuracy.</li>
-    </ul>
-  </div>
-
-  <div class="position">
-    <h3>Machine Learning Project Intern <small>(Jan 2023 – May 2023)</small></h3>
-    <div class="company">CompanyName</div>
-    <ul>
-      <li>Developed a Pix2Pix model for recoloring images to help with diagnosing patients with color vision deficiency.</li>
-      <li>The GAN-generated images had an error rate of less than 0.05 (MSE) compared to the actual simulated images.</li>
-      <li>Configured the model to perform recoloring on videos as well. We learned/used Agile methodology in this project.</li>
-    </ul>
-  </div>
-
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>Visual Question Answering <small>(Dec 2023 - Mar 2024)</small></h3>
-    <ul>
-      <li>Built a Deep Generative model which is used to answer the input questions based on the given input image.</li>
-      <li>Fine-tuned a Multimodal Transformer Architecture (BERT, ViT) using QLoRA on the DAQUAR dataset.</li>
-      <li>Reduced the model’s space complexity by 73.6% with minor accuracy and inference time trade-offs.</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <h3>Lane Line Detection <small>(Oct 2023 - Nov 2023)</small></h3>
-    <ul>
-      <li>Developed a model using U-Net architecture which performs Semantic segmentation to detect lane lines.</li>
-      <li>Utilized a portion of the CULane dataset with 9 categories of lane images for training the model.</li>
-      <li>Used 18000+ lane line images and their respective masks to achieve a testing accuracy of 84.4%</li>
-    </ul>
-  </div>
-
-  <h2>Volunteering</h2>
-
-  <div class="volunteering">
-    <h3>Quantum Self-Driving Neural Networks <small>(Jun 2023 – Aug 2023)</small></h3>
-    <div class="company">CompanyName</div>
-    <ul>
-      <li>Collaborated with a team of 20 to build Deep Learning models predicting steering angles for self-driving cars.</li>
-      <li>Attempted integration with Variational Quantum Algorithms (4 qubits) to enhance performance.</li>
-    </ul>
-  </div>
-
-  <h2>Education</h2>
-
-  <div class="education">
-    <h3>Bachelor’s Degree - Information Technology <small>(Dec 2020 – May 2024)</small></h3>
-    <div class="institution">CollegeName</div>
-    <p>CGPA: 8.52</p>
-  </div>
-
-</body>
 </body>
 </html>
